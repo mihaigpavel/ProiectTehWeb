@@ -1,0 +1,6 @@
+<p>in pagina principala o sa afisam pentru ecranele mari 2 coloane de stiri iar pe ecrane mici una sub alta</p>
+pagina principala - stiri sportive
+
+istoria unui sport fotbal
+portretul unui sportiv - nume
+
