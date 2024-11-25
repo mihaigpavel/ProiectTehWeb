@@ -36,7 +36,7 @@ img {
     width: max-content;
 }
 
-/* Stilizare pentru nav principal */
+
 nav {
     background-color: slateblue;
     margin: 0;
@@ -76,10 +76,9 @@ nav ul li a:hover {
     color: CornflowerBlue;
 }
 
-/* Stilizare pentru submeniu */
+
 nav ul li .submenu {
     display: none;
-    /* Submeniul este ascuns inițial */
     position: absolute;
     top: 100%;
     left: 0;
@@ -111,7 +110,7 @@ nav ul li .submenu li a:hover {
     color: CornflowerBlue;
 }
 
-/* Afișează submeniul la hover */
+
 nav ul li:hover .submenu {
     display: block;
 }
