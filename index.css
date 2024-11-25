@@ -1,7 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppis&display=swap');
-
-html,
-body {
+html,body {
     height: 100%;
 }
 
@@ -15,16 +12,12 @@ header {
     padding: 20px;
     text-align: center;
     border-bottom: 0px;
-
 }
 
 nav {
     background-color: slateblue;
-    /* Fundal pentru nav */
     margin: 0;
-    /* Eliminăm spațiul dintre nav și header */
     padding: 0;
-    /* Fără padding implicit */
 }
 
 nav ul {
@@ -32,9 +25,7 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    /* Flexbox pentru aliniere */
     justify-content: center;
-    /* Elemente centrate */
     margin-bottom: 10px;
 }
 
@@ -51,9 +42,7 @@ nav ul li a {
     text-align: center;
     font-size: 18px;
     color: AliceBlue;
-    /* Culoarea textului */
     transition: all 0.3s ease;
-    /* Tranziție lină */
     position: relative;
 }
 
@@ -76,31 +65,21 @@ footer {
     margin: 0;
     padding: 0;
     justify-content: center;
-    /* Elemente centrate */
     text-align: center;
     margin-top: 10px;
-    
 }
 
 .linkFooter {
     background-color: slateblue;
-    /* Fundal */
     margin: 0;
-    /* Eliminăm spațiul exterior */
     padding: 8px 12px;
-    /* Dimensiune mai mică pentru padding */
     display: inline-block;
-    /* Se poate afișa ca buton compact */
     text-decoration: none;
     text-align: center;
     font-size: 14px;
-    /* Dimensiune mai mică pentru font */
     color: AliceBlue;
-    /* Culoarea textului */
     border-radius: 5px;
-    /* Colțuri rotunjite pentru un efect modern */
     transition: all 0.3s ease;
-    /* Tranziție lină pentru orice schimbare */
     position: relative;
     margin-bottom: 20px;
 }
@@ -114,98 +93,74 @@ footer {
 
 .nedecorata {
     text-decoration: none;
-    /* Elimină sublinierea */
     color: inherit;
-    /* Moștenește culoarea textului din contextul părintelui */
     cursor: pointer;
-    /* Opțional: menține cursorul de link */
 }
 
 .nedecoratamov {
     text-decoration: none;
-    /* Elimină sublinierea */
     color: slateblue;
-    /* Moștenește culoarea textului din contextul părintelui */
     cursor: pointer;
-    /* Opțional: menține cursorul de link */
 }
 
-
-
-@media (min-width: 768px)
-{
+@media (min-width: 768px) {
     .container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        /* 3 coloane egale ca lățime */
         grid-auto-rows: auto;
-        /* Înălțime egală pentru toate rândurile */
         gap: 10px;
         margin-left: 10px;
         margin-right: 10px;
     }
-    
+
     .stire {
-    
         box-sizing: border-box;
         border: 1px solid slateblue;
         max-width: 100%;
-        /* Containerul nu depășește spațiul disponibil */
         overflow: hidden;
-        /* Ascunde conținutul excesiv */
     }
-    
+
     .stire img {
         width: 100%;
         height: 60%;
         display: block;
     }
-    
+
     .stire h3,
     .stire h4,
     .stire p {
         margin: 2px;
-        /* Elimină spațiile implicite ale paragrafelor */
         flex-grow: 1;
-        /* Textul ocupă restul spațiului disponibil */
     }
 }
 
-@media (max-width: 768px)
-{
+@media (max-width: 768px) {
     .container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        /* 3 coloane egale ca lățime */
         grid-auto-rows: auto;
-        /* Înălțime egală pentru toate rândurile */
         gap: 10px;
         margin-left: 10px;
         margin-right: 10px;
     }
-    
+
     .stire {
-    
         box-sizing: border-box;
         border: 1px solid slateblue;
         max-width: 100%;
-        /* Containerul nu depășește spațiul disponibil */
         overflow: hidden;
-        /* Ascunde conținutul excesiv */
     }
-    
+
     .stire img {
         width: 100%;
         height: 60%;
         display: block;
     }
-    
+
     .stire h3,
     .stire h4,
     .stire p {
         margin: 2px;
-        /* Elimină spațiile implicite ale paragrafelor */
         flex-grow: 1;
-        /* Textul ocupă restul spațiului disponibil */
     }
 }
