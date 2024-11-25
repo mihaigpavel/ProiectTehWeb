@@ -130,38 +130,82 @@ footer {
     /* Opțional: menține cursorul de link */
 }
 
-.container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    /* 3 coloane egale ca lățime */
-    grid-auto-rows: auto;
-    /* Înălțime egală pentru toate rândurile */
-    gap: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
+
+
+@media (min-width: 768px)
+{
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* 3 coloane egale ca lățime */
+        grid-auto-rows: auto;
+        /* Înălțime egală pentru toate rândurile */
+        gap: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .stire {
+    
+        box-sizing: border-box;
+        border: 1px solid slateblue;
+        max-width: 100%;
+        /* Containerul nu depășește spațiul disponibil */
+        overflow: hidden;
+        /* Ascunde conținutul excesiv */
+    }
+    
+    .stire img {
+        width: 100%;
+        height: 60%;
+        display: block;
+    }
+    
+    .stire h3,
+    .stire h4,
+    .stire p {
+        margin: 2px;
+        /* Elimină spațiile implicite ale paragrafelor */
+        flex-grow: 1;
+        /* Textul ocupă restul spațiului disponibil */
+    }
 }
 
-.stire {
-
-    box-sizing: border-box;
-    border: 1px solid slateblue;
-    max-width: 100%;
-    /* Containerul nu depășește spațiul disponibil */
-    overflow: hidden;
-    /* Ascunde conținutul excesiv */
-}
-
-.stire img {
-    width: 100%;
-    height: 60%;
-    display: block;
-}
-
-.stire h3,
-.stire h4,
-.stire p {
-    margin: 2px;
-    /* Elimină spațiile implicite ale paragrafelor */
-    flex-grow: 1;
-    /* Textul ocupă restul spațiului disponibil */
+@media (max-width: 768px)
+{
+    .container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        /* 3 coloane egale ca lățime */
+        grid-auto-rows: auto;
+        /* Înălțime egală pentru toate rândurile */
+        gap: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .stire {
+    
+        box-sizing: border-box;
+        border: 1px solid slateblue;
+        max-width: 100%;
+        /* Containerul nu depășește spațiul disponibil */
+        overflow: hidden;
+        /* Ascunde conținutul excesiv */
+    }
+    
+    .stire img {
+        width: 100%;
+        height: 60%;
+        display: block;
+    }
+    
+    .stire h3,
+    .stire h4,
+    .stire p {
+        margin: 2px;
+        /* Elimină spațiile implicite ale paragrafelor */
+        flex-grow: 1;
+        /* Textul ocupă restul spațiului disponibil */
+    }
 }
