@@ -1,0 +1,126 @@
+.breadcrumb {
+    background-color: white;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.breadcrumb p {
+    margin: 0;
+    color: slateblue;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: slateblue;
+    transition: color 0.3s ease;
+}
+
+.breadcrumb a:hover {
+    color: darkslateblue;
+    text-decoration: underline;
+}
+
+main {
+    margin-left: 350px;
+    margin-right: 350px;
+}
+
+.textdata {
+    padding: 0px;
+    margin: 0%;
+}
+
+img {
+    width: max-content;
+}
+
+/* Stilizare pentru nav principal */
+nav {
+    background-color: slateblue;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    color: AliceBlue;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+nav ul li a:hover {
+    border: 2px solid CornflowerBlue;
+    border-radius: 25px;
+    padding: 13px 18px;
+    color: CornflowerBlue;
+}
+
+/* Stilizare pentru submeniu */
+nav ul li .submenu {
+    display: none;
+    /* Submeniul este ascuns inițial */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: slateblue;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+nav ul li .submenu li {
+    display: inline-block;
+    position: relative;
+    margin: 0;
+
+}
+
+nav ul li .submenu li a {
+    padding: 10px 20px;
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+nav ul li .submenu li a:hover {
+    border: 2px solid CornflowerBlue;
+    border-radius: 25px;
+    padding: 13px 18px;
+    color: CornflowerBlue;
+}
+
+/* Afișează submeniul la hover */
+nav ul li:hover .submenu {
+    display: block;
+}
+
+.submenu {
+    text-align: center;
+}
+
+.articol p,
+.articol ol {
+    font-size: 18px;
+}
