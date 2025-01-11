@@ -1,0 +1,102 @@
+<html lang="ro">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Cele mai actuale stiri - Stirile Zilei
+    </title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <script src="scripts/contact.js"></script>
+</head>
+
+<body>
+    <header id="inceput">
+        <h1>Stirile UniBucTV</h1>
+        <p>Cele mai importante stiri ale zilei</p>
+    </header>
+    <nav>
+        <ul>
+            <li class="special">HOME</li>
+            <li> <a href="pagina1.html">POLITICA</a></li>
+            <li> <a href="pagina2.html">ECONOMIE</a></li>
+            <li> <a href="pagina3.html">EDUCATIE</a></li>
+            <li> <a href="pagina4.html">SPORT</a></li>
+        </ul>
+    </nav>
+
+    <table style="width: 100%;">
+        <tr style="width: 100%;">
+            <td style="width: 30%; ">
+                &nbsp;
+            </td>
+            <td style="width: 40%;">
+                <h2>Formular de contact</h2>
+                <form onsubmit="trimiteFormularContact();return false;" id="formular">
+                    <div>
+                        <label for="nume">Nume*:</label> <br>
+                        <input type="text" id="nume" name="nume" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="prenume">Prenume*:</label> <br>
+                        <input type="text" id="prenume" name="prenume" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="bdate">Data nasterii*:</label><br>
+                        <input type="date" id="bdate" name="bdate" required>
+                    </div>
+                    <br>
+                    <div>
+                        Gen*:
+                        <label for="m">Masculin</label>
+                        <input type="radio" id="m" name="gen" value="m">
+                        <label for="f">Feminin</label>
+                        <input type="radio" id="f" name="gen" value="f">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="studii">Nivel studii:</label><br>
+                        <select id="studii" name="studii">
+                            <option value="">Selectati</option>
+                            <option value="Gimnaziale">Gimnaziale</option>
+                            <option value="Liceale">Liceale</option>
+                            <option value="Universitare">Universitare</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="email">Mail*:</label><br>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <br>
+                    <div>
+
+                        <label for="mesaj">Mesaj*:</label>
+                        <br>
+                        <textarea id="mesaj" name="mesaj" rows="5" placeholder="Scrie mesajul tau aici..."
+                            required></textarea>
+                    </div> <br>
+                    <input type="reset">
+                    <input type="submit">
+                </form>
+            </td>
+            <td style="width:30%;">
+                &nbsp;
+            </td>
+        </tr>
+    </table>
+
+    <footer>
+        <a class="nedecorata" href="pagina5.html">Despre noi</a>
+        |
+        <a class="nedecorata" href="contact.html">Contact</a>
+        <p>&copy;
+            <script>document.write(getAnCurent())</script> Portal de stiri | Toate drepturile rezervate.
+        </p>
+        <a class="linkFooter" href="#inceput">Inapoi la inceput</a>
+    </footer>
+</body>
+
+</html>

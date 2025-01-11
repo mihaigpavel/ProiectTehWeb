@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="pagina6.css">
     <script src="index.js"></script>
+    <script src="scripts/pagina6.js"></script>
 </head>
 
 <body>
@@ -61,7 +62,8 @@
                 adus tineretului a doua victorie la Euro U21.
             </p>
         </article>
-        <article id="echipa" class="articol">
+        <button onclick="ascundeEchipa()">Echipe</button>
+        <article id="echipa" class="articol" style="display:none">
             <h2>Echipe</h2>
             <p>Surpriza a lui Mirel Radoi! Selectionerul nationalei de tineret a ales pana la urma acelasi 11 ca la
                 partida cu Croatia! Ivan si-a pastrat astfel locul in fata lui Florinel Coman. De partea cealalta,
@@ -76,7 +78,8 @@
             <br>
             <img src="echipe.png" alt="Ceva nu a mers:(">
         </article>
-        <article id="interviuri" class="articol">
+        <button onclick="ascundeInterviuri()">Interviuri</button>
+        <article id="interviuri" class="articol" style="display:none">
             <h2>Interviuri</h2>
             <p>”Înseamnă foarte mult pentru mine să înscriu pentru echipa națională, este o mândrie incredibilă! Orice
                 gol aș marca, împotriva oricărei echipe este ceva spacial. Sper să marchez în continuare și să ducem
@@ -91,7 +94,8 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
         </article>
-        <article id="clasament" class="articol">
+        <button onclick="ascundeClasament()">Clasament</button>
+        <article id="clasament" class="articol" style="display: none;">
             <h2>Clasamentul grupei C</h2>
             <ol class="articol">
                 <li><span>România U21</span> - 6p</li>
@@ -101,7 +105,8 @@
             </ol>
 
         </article>
-        <article class="articol" id="text">
+        <button onclick="ascundeRezumat()">Rezumat</button>
+        <article class="articol" id="text" style="display: none;">
             <h2>Rezumat al meciului</h2>
             <p>UPDATE Min. 95: Final de meci la Cesena! România U21 se impune în fața Angliei cu 4-2.</p>
             <p>UPDATE Min. 94: Coman vede cartonașul galben, după ce și-a scos tricoul.</p>
@@ -135,6 +140,8 @@
     </main>
     <footer>
         <a class="nedecorata" href="pagina5.html">Despre noi</a>
+        |
+        <a class="nedecorata" href="contact.html">Contact</a>
         <p>&copy;
             <script>document.write(getAnCurent())</script> Portal de Știri | Toate drepturile rezervate.
         </p>
