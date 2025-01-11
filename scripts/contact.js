@@ -21,7 +21,7 @@ function trimiteFormularContact() {
         let string = JSON.stringify(c);
         localStorage.setItem("contacte", string);
     }else{
-        let retString = localStorage.getItem("contacte")
+        let retString = localStorage.getItem("contacte");
         let contacte = JSON.parse(retString);
         contacte.push(contact);
         let string = JSON.stringify(contacte);

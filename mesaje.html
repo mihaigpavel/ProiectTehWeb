@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="ro">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Cele mai actuale stiri - Stirile Zilei
+    </title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <script src="scripts/auth.js"></script>
+    <script src="scripts/mesaje.js"></script>
+</head>
+
+<body onload="bodyonload();loadMesaje()">
+    <header id="inceput">
+        <h1>Stirile UniBucTV</h1>
+        <p>Cea mai dedicata echipa de jurnalisti</p>
+    </header>
+    <nav>
+        <ul>
+            <li> <a href="index.html">HOME</a></li>
+            <li> <a href="pagina1.html">POLITICA</a></li>
+            <li> <a href="pagina2.html">ECONOMIE</a></li>
+            <li> <a href="pagina3.html">EDUCATIE</a></li>
+            <li> <a href="pagina4.html">SPORT</a></li>
+        </ul>
+    </nav>
+    <table>
+        <tr>
+            <td style="width: 40%;">&nbsp;</td>
+            <td style="width: 30%;">
+                <h2>Mesaje din formularul de contact</h2>
+                <h4 id="nelogat" style="color: red;">Nu aveti acces la aceasta resursa</h4>
+                <div id="logat"></div>
+            </td>
+            <td style="width: 40%;">&nbsp;</td>
+        </tr>
+    </table>
+
+
+    <footer>
+        <a class="nedecorata" href="contact.html">Contact</a>
+        |
+        <span id="auth"></span>
+        <p>&copy; Portal de Știri | Toate drepturile rezervate.
+        </p>
+        <a class="linkFooter" href="#inceput">Inapoi la inceput</a>
+    </footer>
+</body>
+
+</html>

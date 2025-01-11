@@ -11,9 +11,10 @@
     <link rel="stylesheet" href="pagina6.css">
     <script src="index.js"></script>
     <script src="scripts/pagina6.js"></script>
+    <script src="scripts/auth.js"></script>
 </head>
 
-<body>
+<body onload="bodyonload()">
     <header id="inceput">
         <h1>Stirile UniBucTV</h1>
         <p>Cele mai importante stiri din sport ale zilei</p>
@@ -142,6 +143,8 @@
         <a class="nedecorata" href="pagina5.html">Despre noi</a>
         |
         <a class="nedecorata" href="contact.html">Contact</a>
+        |
+        <span id="auth"></span>
         <p>&copy;
             <script>document.write(getAnCurent())</script> Portal de Știri | Toate drepturile rezervate.
         </p>
